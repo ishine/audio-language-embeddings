@@ -6,14 +6,14 @@ This project maps `language` and `audio` to the joint embedding space. A wrappin
 ## Available Models
 
 
-|           |              Datset              |      Domain      |      Size     |    SR   | Vocab | Modality |  Mapping | Available |
-|-----------|:--------------------------------:|:----------------:|:-------------:|:-------:|:-----:|:--------:|:--------:|:---------:|
-| AudioCLIP |             Audioset             | Env,Speech,Music |  1.8M (5000h) | 44.1kHz |  527  |   A,V,T  | A-V, A-T |     ✅     |
-| Wav2CLIP  |             VGGSound             | Env,Speech,Music |  200k (556h)  |  16kHz  |  309  |   A,V,T  |    A-V   |           |
-| CLAP      | FSD50k, ClothoV2,AudioCaps, MACS | Env,Speech,Music |    128k (-)   | 44.1KHz |   -   |    A,T   |    A-T   |           |
-| Mus2Lang  |             MSD-eCALS            |       Music      |  517k (4300h) |  16kHz  |  1054 |    A,T   |    A-T   |     ✅     |
-| MusCALL   |     Private (Universal Music)    |       Music      |    250k (-)   |  16kHz  |   -   |    A,T   |    A-T   |           |
-| Mulan     |         Private (Goolge)         |       Music      | 44M (370000h) |    -    |   -   |    A,T   |    A-T   |           |
+|  | Datset | Domain | Size | SR | Vocab | Modality | Mapping | Available |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| AudioCLIP | Audioset | <sub>Env,Speech,Music</sub> | 1.8M (5000h) | 44.1kHz | 527 | A,V,T | A-V, A-T | ✅ |
+| Wav2CLIP | VGGSound | <sub>Env,Speech,Music</sub>  | 200k (556h) | 16kHz | 309 | A,V,T | A-V |  |
+| CLAP | <sub>FSD50k, ClothoV2,AudioCaps, MACS</sub> | <sub>Env,Speech,Music</sub>  | 128k (-) | 44.1KHz | - | A,T | A-T |  |
+| Ours | MSD-eCALS | <sub>Music</sub>  | 517k (4300h) | 16kHz | 1054 | A,T | A-T | ✅ |
+| MusCALL | Private (Universal Music) | <sub>Env,Speech,Music</sub>  | 250k (-) | 16kHz | - | A,T | A-T |  |
+| Mulan | Private (Goolge) | <sub>Music</sub>  | 44M (370000h) | - | - | A,T | A-T |  |
 
 
 - AudioCLIP: Extending CLIP to Image, Text and Audio: https://arxiv.org/abs/2106.13043
