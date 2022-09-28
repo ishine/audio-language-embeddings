@@ -5,23 +5,30 @@ This project maps `language` and `audio` to the joint embedding space. A wrappin
 
 ## Available Models
 
-|            |   Datset  |  Size (Hour) |    SR   | Vocab | Modality | Support |
-|:----------:|:---------:|:------------:|:-------:|:-----:|:--------:|:-------:|
-|  AudioCLIP |  [Audioset](https://research.google.com/audioset/) | 1.8M (5000h) | 44.1kHz |  527  |   A,V,T  |    ✅    |
-|  wav2CLIP  |  [VGGSound](https://www.robots.ox.ac.uk/~vgg/data/vggsound/) |  200k (556h) |  16kHz  |  309  |   A,V,T  |         |
-| Music2Lang | [MSD-eCALS](https://github.com/SeungHeonDoh/msd-splits) | 517k (4300h) |  16kHz  |  1054 |    A,T   |    ✅    |
 
-- WAV2CLIP: LEARNING ROBUST AUDIO REPRESENTATIONS FROM CLIP: https://arxiv.org/pdf/2110.11499
+|           |              Datset              |      Domain      |      Size     |    SR   | Vocab | Modality |  Mapping | Available |
+|-----------|:--------------------------------:|:----------------:|:-------------:|:-------:|:-----:|:--------:|:--------:|:---------:|
+| AudioCLIP |             Audioset             | Env,Speech,Music |  1.8M (5000h) | 44.1kHz |  527  |   A,V,T  | A-V, A-T |     ✅     |
+| Wav2CLIP  |             VGGSound             | Env,Speech,Music |  200k (556h)  |  16kHz  |  309  |   A,V,T  |    A-V   |           |
+| CLAP      | FSD50k, ClothoV2,AudioCaps, MACS | Env,Speech,Music |    128k (-)   | 44.1KHz |   -   |    A,T   |    A-T   |           |
+| Mus2Lang  |             MSD-eCALS            |       Music      |  517k (4300h) |  16kHz  |  1054 |    A,T   |    A-T   |     ✅     |
+| MusCALL   |     Private (Universal Music)    |       Music      |    250k (-)   |  16kHz  |   -   |    A,T   |    A-T   |           |
+| Mulan     |         Private (Goolge)         |       Music      | 44M (370000h) |    -    |   -   |    A,T   |    A-T   |           |
+
+
 - AudioCLIP: Extending CLIP to Image, Text and Audio: https://arxiv.org/abs/2106.13043
-- Music2Langauge: Ours
+- WAV2CLIP: LEARNING ROBUST AUDIO REPRESENTATIONS FROM CLIP: https://arxiv.org/pdf/2110.11499
+- CLAP : LEARNING AUDIO CONCEPTS FROM NATURAL LANGUAGE SUPERVISION: https://arxiv.org/pdf/2206.04769
+- Mus2Lang: Ours
+- MusCALL : Contrastive Audio-Language Learning for Music: https://arxiv.org/abs/2208.12208
+- MuLan: MuLan: A Joint Embedding of Music Audio and Natural Language: https://arxiv.org/abs/2208.12415
 
 > ###### Issue:
 > 
-> <sub>• WAV2CLIP: currently only open audio embedding weights.<br /> • CLAP: There are no published codes and weights yet..<br /></sub>
+> <sub>• WAV2CLIP: currently only open audio embedding weights.<br /> • CLAP,MusCALL,MuLan: There are no published codes and weights yet..<br /></sub>
 
 
 ## Quickstart
-Requirements: >1 GPU
 Download your pytorch 1.8.1 at https://pytorch.org/get-started/previous-versions/
 
 ```
