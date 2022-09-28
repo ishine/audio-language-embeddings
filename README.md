@@ -45,6 +45,7 @@ We put some audio files and examples of text pairs in `dataset/samples`.
 The `extractor.py` function extracts the audio-language joint embedding `z_audio, z_text`.
 
 ```
+cd ale
 python extractor.py --inference_type audio --model_type audioclip
 python extractor.py --inference_type audio --model_type music2lang
 python extractor.py --inference_type text --model_type audioclip
