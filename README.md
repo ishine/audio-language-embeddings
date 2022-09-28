@@ -1,4 +1,4 @@
-# Audio-Langauge Embedding Extractor
+# Audio-Language Embedding Extractor
 
 This project maps `language` and `audio` to the joint embedding space. A wrapping repository for several public models.
 
@@ -77,8 +77,7 @@ SAMPLE_T = "../dataset/samples/text.json"
 ```
 
 
-## Reference
+## Code Reference
 
 - AudioCLIP: https://github.com/AndreyGuzhov/AudioCLIP
 - wav2CLIP: https://github.com/descriptinc/lyrebird-wav2clip
-- CLAP: https://arxiv.org/abs/2206.04769 (not open)
