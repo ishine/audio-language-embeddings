@@ -1,4 +1,4 @@
-# Audio-Langauge Embeddings
+# Audio-Langauge Embedding Extractor
 
 This project maps `language` and `audio` to the joint embedding space. A wrapping repository for several public models.
 
@@ -15,7 +15,7 @@ This project maps `language` and `audio` to the joint embedding space. A wrappin
 | Wav2CLIP | <sub>VGGSound</sub> | <sub>Env,Speech,Music</sub>  | 200k (556h) | 16kHz | 309 | A,V,T | A-V |  |
 | CLAP | <sub>FSD50k, ClothoV2</sub> <br> <sub>AudioCaps, MACS</sub> | <sub>Env,Speech,Music</sub>  | 128k (-) | 44.1KHz | - | A,T | A-T |  |
 | Ours | <sub>MSD-eCALS</sub> | <sub>Music</sub>  | 517k (4300h) | 16kHz | 1054 | A,T | A-T | ✅ |
-| MusCALL | <sub>Private (Universal Music)</sub> | <sub>Env,Speech,Music</sub>  | 250k (-) | 16kHz | - | A,T | A-T |  |
+| MusCALL | <sub>Private (Universal Music)</sub> | <sub>Music</sub>  | 250k (-) | 16kHz | - | A,T | A-T |  |
 | Mulan | <sub>Private (Goolge)</sub> | <sub>Music</sub>  | 44M (370000h) | - | - | A,T | A-T |  |
 
 
