@@ -3,8 +3,11 @@
 This project maps `language` and `audio` to the joint embedding space. A wrapping repository for several public models.
 
 
-## Available Models
+<p align = "center">
+    <img src = "https://i.imgur.com/PLLAXNt.png">
+</p>
 
+## Available Models
 
 |  | Datset | Domain | Size | SR | Vocab | Modality | Mapping | Available |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
